@@ -22,14 +22,14 @@ return new class extends Migration
     {
         Schema::create('trains', function (Blueprint $table) {
             $table->id();
-            $table->string("startingStation");
-            $table->string("arrivalStation");
-            $table->dateTime("departure time");
-            $table->dateTime("arrival time");
-            $table->string("trainCode");
-            $table->tinyInteger("carriagesNumber");
-            $table->tinyInteger("inTime");
-            $table->tinyInteger("Cancelled");
+            $table->string("starting_station");
+            $table->string("arrival_station");
+            $table->dateTime("departure_time");
+            $table->dateTime("arrival_time");
+            $table->string("train_code");
+            $table->tinyInteger("carriages_number");
+            $table->tinyInteger("in_time");
+            $table->tinyInteger("cancelled");
             $table->timestamps();
         });
     }

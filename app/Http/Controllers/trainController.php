@@ -11,7 +11,7 @@ class trainController extends Controller
     public function index() {
         $today = Carbon::today();
 
-        $trains = Train::where("departure_time","=",$today->toDateString())->get();
+        $trains = Train::all();
         // dd($trains);
         return view("home", compact("trains"));
     }
